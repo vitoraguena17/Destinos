@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTATE-NOS</title>
+    <!-- Linkando a CSS -->
+    <link rel="stylesheet" href="./css/style_02.css" />
+    <!-- Linkando Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <form class="form">
+        <h2>CONTATE-NOS</h2>
+        <p><label for="nome">Nome</label><input type="text" id="nome" placeholder="Escreva seu nome aqui"></p>
+        <p><label for="email">Email</label><input type="email" id="email" placeholder="Informe seu e-mail"></p>
+        <p><label for="recado">Recado</label><input type="text" id="recado" placeholder="O que você gostaria de dizer..."></p>
+        <p><label for="idade">Idade</label></p>
+        <input type="range" id="idade" name="idade" min="10" max="100" step="1" oninput="valorIdade.value = idade.value">
+        <output for="idade" id="valorIdade">50</output>
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+</body>
+</html>
